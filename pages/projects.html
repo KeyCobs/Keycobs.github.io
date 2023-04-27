@@ -4,41 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./../css/projects.css">
+    <link rel="stylesheet" href="./../css/Common.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My projects</title>
 </head>
 <body>
-    <div id="header">
-        <a class="headLink" href="../index.html"><h3>Home</h3></a>
-        <a class="headLink" href="./aboutMe.html"><h3>about me</h3></a>
-        <a class="headLink" href="./cv.html"><h3>CV</h3></a>
-        <a class="headLink" href="./contactMe.html"><h3>Contact me</h3></a>
-        <a class="headLink" href="./others.html"><h3>Others</h3></a>
+  <script src="../js/projects.js"></script>
+  <header>
+    <div class="header-container">
+      <nav>
+        <ul>
+          <li><a class="headLink" href="../index.html"><h2>Home</h2></a></li>
+          <li><a class="headLink" href="./aboutMe.html"><h2>about me</h2></a></li>
+          <li><a class="headLink" href="./Experience.html"><h2>My Experience</h2></a></li>
+          <li><a class="headLink" href="./contactMe.html"><h2>Contact me</h2></a></li>
+          <li><a class="headLink" href="./others.html"><h2>Others</h2></a></li>
+        </ul>
+      </nav>
     </div>
-    
+  </header>
+
     <div class="searchBox">
 
-        <input class="searchInput"type="text" name="" placeholder="Search">
+        <input class="searchInput" id="searchProject" type="text" name="search" onkeyup="SearchAnimal()" placeholder="C#, .NET, WIP">
         <button class="searchButton"  href="">
             <i class="material-icons">
-                search
+               Search
             </i>
         </button>
     </div>
 
-    <div class="l-container">
-        <div class="b-game-card .net c#">
+    <ol class="l-container">
+        <li class="b-game-card WIP Website HTML Javascript JS CSS">
          <a href="./Projects/webSite.html"> <div class="b-game-card__cover" style="background-image: url(./Projects/Images/Project02.gif);"></div></a>
-        </div>
-        <div class="b-game-card">
-          <div class="b-game-card__cover" style="background-image: url(https://andrewhawkes.github.io/codepen-assets/steam-game-cards/game_2.jpg);"></div>
-        </div>
-        <div class="b-game-card">
-          <div class="b-game-card__cover" style="background-image: url(https://andrewhawkes.github.io/codepen-assets/steam-game-cards/game_3.jpg);"></div>
-        </div>
-        <div class="b-game-card">
-          <div class="b-game-card__cover" style="background-image: url(https://andrewhawkes.github.io/codepen-assets/steam-game-cards/game_4.jpg);"></div>
-        </div>
+        </li>
+        <li class="b-game-card Bot Discord C# .Net Programming server">
+          <a href="./Projects/DiscordBot.Html"><div class="b-game-card__cover" style="background-image: url(./Projects/Images/DiscordBot_BBB.png);"></div></a>
+        </li>
+       
 
+
+
+        
 </body>
 </html>

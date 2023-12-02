@@ -68,3 +68,29 @@ body
   text-align: center;
 }
 
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  max-width: 80vw; /* Adjust the maximum width as needed */
+  margin: 0 auto;
+}
+
+.bubble-button {
+  width: auto;
+  min-width: 100px;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #b38f00; /* Blue color, you can change this */
+  opacity: 0.8;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.bubble-button:hover {
+  transform: scale(1.1);
+}

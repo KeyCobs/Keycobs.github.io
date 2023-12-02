@@ -3,46 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/Common.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
     <title>Kevin Jacobs</title>
 </head>
 <body>
-    <header>
-        <div class="header-container">
-          <nav>
-            <ul>
-              <li><a class="headLink" href="./pages/aboutMe.html"><h2>About me</h2></li>
-              <li><a class="headLink" href="./pages/projects.html"><h2>My Projects</h2></a></li>
-              <li><a class="headLink" href="./pages/Experience.html"><h2>My Experience</h2></a></li>
-              <li><a class="headLink" href="./pages/contactMe.html"><h2>Contact me</h2></a></li>
-              <li><a class="headLink" href="./pages/others.html"><h2>Others</h2></a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+
 
     <div class="typename">
-        <h1>Welcome <span class="auto-type"></span></h1>      
+      <h1>Welcome <span class="auto-type"></span></h1>      
+  </div>
+
+
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <!-- HTML structure for the button container -->
+    <div class="button-container">
+        <!-- Manual HTML for each button -->
+        <button class="bubble-button" onclick="location.href='./pages/aboutMe.html'">About me</button>
+        <button class="bubble-button" onclick="location.href='./pages/projects.html'">My Projects</button>
+        <button class="bubble-button" onclick="location.href='./pages/contactMe.html'">Contact me</button>
+        <button class="bubble-button" onclick="location.href='./pages/others.html'">Others</button>
     </div>
+    </nav>
+  </div>
 
 
+
+  <!--source: https://codecary.com/text-typing-animation-on-website-using-html-css/
     
+  -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+      var typed = new Typed(".auto-type",
+      {
+          //strings: ["I'm Kevin", "This site is still under construction" ,"I like Programming","I like Video Games","I also like Game Development","I like to write","I play Dungeons and Dragons"],
+          strings : ["I'm Kevin", "This site is still under construction", "Last update 23-11-2023"],
+          typeSpeed: 100,
+          backSpeed: 50,
+          loop: true
+      })
+  </script>
 
-    <!--source: https://codecary.com/text-typing-animation-on-website-using-html-css/
-      
-    -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-        var typed = new Typed(".auto-type",
-        {
-            //strings: ["I'm Kevin", "This site is still under construction" ,"I like Programming","I like Video Games","I also like Game Development","I like to write","I play Dungeons and Dragons"],
-            strings : ["I'm Kevin", "This site is still under construction", "Last update 31-08-2023"],
-            typeSpeed: 100,
-            backSpeed: 50,
-            loop: true
-        })
-    </script>
+    <!-- Bootstrap JS and Popper.js from CDN (required for Bootstrap components) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,28 +1,19 @@
-h2
-{
-    margin-left: 12%;
-    align-items: center;
-    display: inline;
-
-}
-
 
 
 *{
     margin: 0;
     padding: 0;
-
     font-family: 'Poppins', sans-serif;
   }
-  .typename{
- 
-    height: 50vh;
 
+  .typename{
+    height: 50vh;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+  
   .container h1{
     font-size: 80px;
     font-weight: 600;
@@ -35,12 +26,73 @@ h2
   body{
     background-image: url(../src/index_Background.gif);
     background-size: 100%;
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> a76e1aa0d55e532348b8d54bc12b47e637169000
     padding:0;
     margin:0;
     overflow-x: hidden;
     overflow-y: hidden;
     white-space: nowrap;
-
 }
+/* Common.css */
+body {
+  background-color: #1a1a1a;
+  font-family: 'Arial', sans-serif;
+}
+
+header {
+  color: #fff; /* Set text color to white */
+  padding: 20px 0;
+  text-align: center; /* Center text */
+}
+
+/* Use more specific selectors to target navbar text */
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-toggler-icon,
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+#navbarNav
+{
+  color: white;
+}
+
+/* Optional: Add styles for the auto-type animation */
+.auto-type {
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+
+        /* Add a class for the bubble effect */
+        /* Add a class for the button effect */
+        .button-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          max-width: 80vw; /* Adjust the maximum width as needed */
+          margin: 0 auto;
+      }
+
+      .bubble-button {
+          width: auto;
+          min-width: 100px;
+          padding: 10px;
+          margin: 10px;
+          border: none;
+          border-radius: 10px;
+          background-color: #b38f00; /* Blue color, you can change this */
+          opacity: 0.8;
+          color: #fff;
+          font-size: 14px;
+          cursor: pointer;
+          transition: transform 0.3s ease-in-out;
+      }
+
+      .bubble-button:hover {
+          transform: scale(1.1);
+      }

@@ -1,46 +1,9 @@
-/*HEADERS*/
-#header
-{
-    margin-bottom: 10%;
-}
+
 #HeaderName
 {
     padding-left: 5%;
 }
 
-h3
-{
-    font-size: 30px;
-    margin-left: 12%;
-    align-items: center;
-    display: inline;
-    font-family: 'Poppins', sans-serif;
-    color: #a7abc5
-}
-#HeaderName
-{
-    padding-left: 5%;
-}
-
-p 
-{
-    font-family: 'Poppins', sans-serif;
-    font-size: 22px;
-    margin-left: 5%;
-    margin-right: 30%;
-
-}
-
-body{
-    background-color: #1e1d2b;
-
-}
-
-
-p,h2,h4,h1,h5
-{
-    color: #a7abc5
-}
 
 h2
 {

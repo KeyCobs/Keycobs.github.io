@@ -1,51 +1,38 @@
-h2
-{
-    margin-left: 12%;
-    align-items: center;
-    display: inline;
+/* Common.css */
+body {
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
 }
 
-h1
-{
-    color: white;
-    
+.header-container {
+  background-color: #333;
+  padding: 10px 0;
 }
 
-*{
-    margin: 0;
-    padding: 0;
+.navbar {
+  background-color: #004d4d; /* Dark turquoise/teal */
+}
 
-    font-family: 'Poppins', sans-serif;
-  }
-  .typename{
- 
-    height: 100vh;
+.navbar-brand, .navbar-nav .nav-link {
+  color: #fff;
+}
 
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .container h1{
-    font-size: 80px;
-    font-weight: 600;
-  }
-  span
-  {
-    color: aquamarine;
-  }
+.navbar-toggler-icon {
+  background-color: #fff;
+}
 
-  body{
-    background-image: url(../src/index_Background.gif);
-    background-size: 100%;
+.typename {
+  text-align: center;
+  margin-top: 50px;
+}
 
-    padding:0;
-    margin:0;
+.typename h1 {
+  font-size: 2.5em;
+}
 
-
-
-    overflow-x: hidden;
-    overflow-y: hidden;
-    white-space: nowrap;
-
+/* Optional: Add styles for the auto-type animation */
+.auto-type {
+  color: #ffcc00;
+  font-weight: bold;
 }

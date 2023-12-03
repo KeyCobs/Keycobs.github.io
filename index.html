@@ -3,46 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/Common.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/Common.css"
     <title>Kevin Jacobs</title>
 </head>
 <body>
-    <header>
-        <div class="header-container">
-          <nav>
-            <ul>
-              <li><a class="headLink" href="./pages/aboutMe.html"><h2>About me</h2></li>
-              <li><a class="headLink" href="./pages/projects.html"><h2>My Projects</h2></a></li>
-              <li><a class="headLink" href="./pages/Experience.html"><h2>My Experience</h2></a></li>
-              <li><a class="headLink" href="./pages/contactMe.html"><h2>Contact me</h2></a></li>
-              <li><a class="headLink" href="./pages/others.html"><h2>Others</h2></a></li>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <!-- Toggle button for mobile view -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <button class="bubble-button nav-link" onclick="location.href='pages/aboutMe.html'">About me</button>
+                </li>
+                <li class="nav-item">
+                    <button class="bubble-button nav-link" onclick="location.href='pages/projects.html'">My Projects</button>
+                </li>
+                <li class="nav-item">
+                    <button class="bubble-button nav-link" onclick="location.href='pages/experience.html'">My Experience</button>
+                </li>
             </ul>
-          </nav>
         </div>
-      </header>
+    </nav>
+</div>
 
-    <div class="typename">
-        <h1>Welcome <span class="auto-type"></span></h1>      
-    </div>
-
-
-    
-
-    <!--source: https://codecary.com/text-typing-animation-on-website-using-html-css/
-      
-    -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-        var typed = new Typed(".auto-type",
-        {
-            //strings: ["I'm Kevin", "This site is still under construction" ,"I like Programming","I like Video Games","I also like Game Development","I like to write","I play Dungeons and Dragons"],
-            strings : ["I'm Kevin", "This site is still under construction", "Last update 31-08-2023"],
-            typeSpeed: 100,
-            backSpeed: 50,
-            loop: true
-        })
-    </script>
+<div class="typename">
+    <h1>Welcome <span class="auto-type"></span></h1>      
+</div>
+<!--------------------------------------------------------------------->
+<!--SCRIPT-->
+  <!--source: https://codecary.com/text-typing-animation-on-website-using-html-css/-->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+      var typed = new Typed(".auto-type",
+      {
+          //strings: ["I'm Kevin", "This site is still under construction" ,"I like Programming","I like Video Games","I also like Game Development","I like to write","I play Dungeons and Dragons"],
+          strings : ["I'm Kevin", "This site is still under construction", "Last update 2-12-2023", "Last Update: Added Bootsrap and small redesign"],
+          typeSpeed: 100,
+          backSpeed: 50,
+          loop: true
+      })
+  </script>
+    <!-- Bootstrap JS and Popper.js from CDN (required for Bootstrap components) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<!--END SCRIPT-->
 </body>
 </html>
